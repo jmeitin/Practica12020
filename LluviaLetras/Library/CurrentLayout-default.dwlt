@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 494}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 875, y: 494}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -302,9 +302,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f4330000
-      m_LastClickedID: 13300
-      m_ExpandedIDs: 40fbffff
+      m_SelectedIDs: ea330000
+      m_LastClickedID: 13290
+      m_ExpandedIDs: 60fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -411,7 +411,7 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\danie\Desktop\Lluvia de letras definitiva\Practica12020\LluviaLetras
+  m_LastProjectPath: C:\Users\javie\Documents\UNI\Motores\Practica12020\LluviaLetras
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
@@ -632,7 +632,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: -1.6163682, y: 0.43313056, z: -5.2786193}
     speed: 2
-    m_Value: {x: -1.475594, y: 0.47508314, z: -5.25801}
+    m_Value: {x: -1.6163682, y: 0.43313056, z: -5.2786193}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -684,7 +684,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 4.784556
     speed: 2
-    m_Value: 4.578522
+    m_Value: 4.784556
   m_Ortho:
     m_Target: 1
     speed: 2
