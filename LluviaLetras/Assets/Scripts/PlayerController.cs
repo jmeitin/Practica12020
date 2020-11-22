@@ -9,13 +9,14 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        //Obtenemos el sentido de movimiento
         float dir = Input.GetAxis("Horizontal");
+        //Calculamos el espacio deltax en base al sentido y la velocidad
         float deltaX = dir * unitPerSecs * Time.deltaTime;
 
         //DADO que no hay Rigidbody ==> Translate
         if (transform.position.x + deltaX < anchoMundo && transform.position.x + deltaX > -anchoMundo)
-            transform.Translate(deltaX, 0, 0); 
-
-        //ESTO NO TERMINA DE AJUSTARSE AL BORDE
+            transform.Translate(deltaX, 0, 0);
+      
     }
 }

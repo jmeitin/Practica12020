@@ -10,12 +10,14 @@ public class Cae : MonoBehaviour
 
     void Awake()
     {
-        v = Random.Range(minVel, maxVel + 1);
+        //Obtenemos un valor aleatorio entre las dos variables de velocidad 
+        v = Random.Range(minVel, maxVel + 1); 
        
     }
 
     void Update()
     {
+        //Modificamos el transform de la letra en el eje y 
         transform.Translate(0, -v * Time.deltaTime, 0);
     }
 }

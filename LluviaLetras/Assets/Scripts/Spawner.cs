@@ -17,11 +17,14 @@ public class Spawner : MonoBehaviour
     
     void Awake()
     {
+        //Obtenemos el collider de el spawner para usar sus bounds como limite de generacion de letras 
         col = GetComponent<BoxCollider2D>();
+        if (col == null) Debug.Log("no se encuentra el collider");
     }
 
     void Update()
     {
+        //Si no se ha creado la letra obtenemos valores aleatorios -> Parta la posicion x y para el tiempo hasta su generacion 
         if (!crear && wait)
         {
             t = Random.Range(minTime, maxTime);
@@ -29,10 +32,11 @@ public class Spawner : MonoBehaviour
 
             crear = true;
         }
-
+        //En cambio cuando  nos toca crear una letra , esperamos el tiempo obtenido previamente para hacer un invoke 
         else if (wait)
         {
-            Crear(t);
+            //Invoke del metodo que genera una nueva letra 
+            Invoke("NewPrefab", t);
             wait = false;
         }
         
@@ -45,8 +49,5 @@ public class Spawner : MonoBehaviour
         crear = false;
         wait = true;
     }
-    void Crear(float t) //ESPERA UN RATO A LLAMAR AL METODO
-    {
-        Invoke("NewPrefab", t);        
-    }
+   
 }

@@ -8,8 +8,8 @@ public class LogicaLetra : MonoBehaviour
 
     void Awake()
     {
-        text = GetComponent<TextMesh>();        
-
+        text = GetComponent<TextMesh>();
+        if (text == null) Debug.Log("La letra no tiene asociado el Text Mesh");
         char A; //variable char                                 
                 // (65, 90) son mayusculas, para minusculas (97,122)
         A = (char)Random.Range(65, 90); //Los caracteres de las letras en ASCI se encuentran entre (65, 90) para mayusculas y (97,122) minusculas
