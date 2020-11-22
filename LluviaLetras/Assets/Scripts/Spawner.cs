@@ -44,7 +44,7 @@ public class Spawner : MonoBehaviour
 
     void NewPrefab()
     {
-        Vector3 v = new Vector3(x, transform.position.y, transform.position.z);
+        Vector3 v = new Vector3(x, transform.position.y-2, transform.position.z);
         Instantiate<GameObject>(prefab, v, Quaternion.identity);
         crear = false;
         wait = true;

@@ -20,4 +20,24 @@ public class Cae : MonoBehaviour
         //Modificamos el transform de la letra en el eje y 
         transform.Translate(0, -v * Time.deltaTime, 0);
     }
+
+
+
+
+
+
+
+
+    //Metodos de la escena MyGame     
+    public void CambiaSentido()
+    {
+        //Cambiamos el sentido de el eje y de la letra 
+        v = -v; 
+    }
+
+    public bool Ascendente()
+    {
+        
+        return v < 0;
+    }
 }
