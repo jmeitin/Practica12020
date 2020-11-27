@@ -12,8 +12,8 @@ public class Rebote : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
         Cae letra = collision.gameObject.GetComponent<Cae>();
+        //Si lo que entra en el trigger es una letra , y esta dentro del rango cambiamos el sentido, haciendola "rebotar"
         if (letra != null)
         {
             float xmax = col.bounds.max.x;
@@ -21,10 +21,7 @@ public class Rebote : MonoBehaviour
             float ymax = col.bounds.max.y;
             if (collision.gameObject.transform.position.x >= xmin && collision.gameObject.transform.position.x <= xmax && collision.gameObject.transform.position.y > ymax+0.6) 
                 letra.CambiaSentido();
-
-
-
         }
-        else Debug.Log("No estamos colisionando con una letra ");
+        else Debug.Log("No estamos colisionando con una letra");
     }
 }

@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class Danyo : MonoBehaviour
 {
-
     private int danyorecibido = 0;
     const int danyo = 10;
     private float time;
     private Camera cam;
-
     void Awake()
     {
         cam = Camera.main;  //Accedemos a la camara principal , y la guardamos en una variable privada 
@@ -30,7 +28,6 @@ public class Danyo : MonoBehaviour
         else if (danyorecibido == 100) Debug.Break();
 
     }
-
     private void OnTriggerEnter2D(Collider2D collision)     //Metodo que cambia el color de la camara en base a la perdida de vida 
     {
         if (collision.gameObject.GetComponent<LogicaLetra>() != null)
@@ -44,5 +41,4 @@ public class Danyo : MonoBehaviour
         }
         else Debug.Log("Danyo detecto algo que no era una letra");
     }
-
 }

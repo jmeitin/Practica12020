@@ -6,7 +6,6 @@ public class PlayerController : MonoBehaviour
 {
     public float unitPerSecs = 5;
     private float anchoMundo = 6.7f; 
-
     void Update()
     {
         //Obtenemos el sentido de movimiento

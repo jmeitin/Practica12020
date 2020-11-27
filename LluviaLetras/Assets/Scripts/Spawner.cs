@@ -10,6 +10,7 @@ public class Spawner : MonoBehaviour
 
     private BoxCollider2D col;
 
+    //Variables para establecer el tiempo y los limites de posicion de la generacion de letras
     private float t;
     private float x;
     private bool crear = false;
@@ -45,6 +46,7 @@ public class Spawner : MonoBehaviour
     void NewPrefab()
     {
         Vector3 v = new Vector3(x, transform.position.y-2, transform.position.z);
+        //Creacion de una nueva letra en la posicion dada por el vector v 
         Instantiate<GameObject>(prefab, v, Quaternion.identity);
         crear = false;
         wait = true;

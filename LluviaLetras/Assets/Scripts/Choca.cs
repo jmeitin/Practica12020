@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class Choca : MonoBehaviour
 {
-
-
+    //Si el spawner detecta una letra ascendente la destruye 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
+        
         Cae letra = collision.gameObject.GetComponent<Cae>();
         //Si la letra no es nula y esta ascendiendo por que ha rebotado con la pala , la destruimos al llegar al spawn
         if (letra != null && letra.Ascendente())
@@ -18,8 +17,4 @@ public class Choca : MonoBehaviour
         }
         else Debug.Log("No estamos colisionando con una letra// La letra colisionada no lleva un sentido ascendente");
     }
-
-
-
-
 }

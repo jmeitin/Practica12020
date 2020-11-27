@@ -1,13 +1,13 @@
 
 Hemos creado dos Scripts, uno controla el rebote de las letras salvadas, que en lugar de destruirlas , modifica gracias a un metodo del script cae su posicion en el eje y,
-disparandolas para arriba cuando chocan con la pala, y destruyendolas al chocar con el spawn
+disparandolas para arriba cuando chocan con la pala, y destruyendolas al chocar con el spawn.
 
-Todo esto esta gestionado en estos scripts:
+Todo esto esta gestionado en los siguientes scripts:
 
 Cae (Prefab Letra): 
- - CambiaSentido: Modifica a direccion de la letra 
- - Ascendente: Devuelve true si el sentido de la letra es ascendente
+ - CambiaSentido: Modifica a direccion de la letra.
+ - Ascendente: Devuelve true si el sentido de la letra es ascendente.
 Rebote (Player): 
- - Crea el rebote de la letra al chocar con la pala, cambiando el sentido 
+ - Crea el rebote de la letra al chocar con la pala, cambiando el sentido.
 Choca (Spawner):
-  - Cuando el spawner detecta que ha chocado una letra y lleva sentido ascendente , la destruye 
+  - Cuando el spawner detecta que ha chocado una letra y lleva sentido ascendente , la destruye.
